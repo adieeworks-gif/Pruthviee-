@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Pruthviee ❤️</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #fff0f5, #ffe0eb, #fff7f0);
+    color: #542936;
+    overflow-x: hidden;
+}
+
+.screen {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    text-align: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 650px;
+    padding: 35px 25px;
+    border-radius: 30px;
+    background: rgba(255,255,255,0.82);
+    box-shadow: 0 15px 50px rgba(120,40,70,0.18);
+}
+
+h1 {
+    color: #a33d64;
+    font-size: clamp(40px, 10vw, 70px);
+    margin: 10px 0;
+}
+
+h2 {
+    color: #a33d64;
+    font-size: 30px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.small {
+    color: #946c79;
+    font-size: 14px;
+}
+
+button {
+    border: none;
+    border-radius: 30px;
+    padding: 15px 25px;
+    background: #a9466b;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    box-shadow: 0 8px 20px rgba(169,70,107,0.25);
+}
+
+button:hover {
+    transform: scale(1.03);
+}
+
+.hidden {
+    display: none;
+}
+
+.envelope {
+    font-size: 85px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    50% {
+        transform: scale(1.08);
+    }
+}
+
+.reason {
+    background: #fff3f7;
+    padding: 16px;
+    margin: 12px 0;
+    border-radius: 18px;
+    text-align: left;
+}
+
+.photo {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    pointer-events: none;
+    animation: float 6s linear forwards;
+}
+
+@keyframes float {
+    to {
+        transform: translateY(-110vh) rotate(25deg);
+        opacity: 0;
+    }
+}
+
+.footer {
+    margin-top: 25px;
+    color: #a06b7b;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- START -->
+
+<section class="screen" id="start">
+
+<div class="card">
+
+<div class="envelope">💌</div>
+
+<p class="small">
+A little surprise made especially for you...
+</p>
+
+<h1>Hey Pruthviee ❤️</h1>
+
+<p>
+I made something for you.
+<br>
+So please don't rush...
+<br>
+Open it slowly. 🥹
+</p>
+
+<button onclick="showPage('letter')">
+Open Your Surprise ✨
+</button>
+
+</div>
+
+</section>
+
+
+<!-- LETTER -->
+
+<section class="screen hidden" id="letter">
+
+<div class="card">
+
+<h2>Happy Boyfriend's Day, Pruthviee! 💗</h2>
+
+<p>
+I don't know if a little website can explain everything
+I feel, but I wanted to make this tiny corner of the
+internet just for you.
+</p>
+
+<p>
+Some people simply enter our lives...
+and somehow become a beautiful part of our everyday thoughts.
+</p>
+
+<p>
+And you are one of those people for me. 🤍
+</p>
+
+<p>
+The little conversations, silly moments, smiles,
+and memories mean much more to me than you probably know.
+</p>
+
+<button onclick="showPage('reasons')">
+There's More... 🥺
+</button>
+
+</div>
+
+</section>
+
+
+<!-- REASONS -->
+
+<section class="screen hidden" id="reasons">
+
+<div class="card">
+
+<h2>A Few Reasons You're Special 💕</h2>
+
+<div class="reason">
+🌷 You make ordinary moments feel special.
+</div>
+
+<div class="reason">
+🫶 You can make me smile without even trying.
+</div>
+
+<div class="reason">
+🌙 Somehow, you find your way into so many of my thoughts.
+</div>
+
+<div class="reason">
+💗 I appreciate the little things you do more than you realise.
+</div>
+
+<div class="reason">
+✨ You are simply someone I'm genuinely grateful for.
+</div>
+
+<div class="reason">
+🥹 And honestly... I'm just happy that you're YOU.
+</div>
+
+<button onclick="showPage('memory')">
+Our Memories 📸
+</button>
+
+</div>
+
+</section>
+
+
+<!-- MEMORY -->
+
+<section class="screen hidden" id="memory">
+
+<div class="card">
+
+<h2>Our Little Memory Corner 📸</h2>
+
+<p>
+Some moments deserve to stay forever. ❤️
+</p>
+
+<!--
+TO ADD YOUR PHOTO:
+
+1. Upload your photo to the same GitHub repository.
+2. Rename it exactly:
+
+memory.jpg
+
+3. The photo will automatically appear here.
+-->
+
+<img src="memory.jpg"
+     class="photo"
+     alt="Our memory"
+     onerror="this.style.display='none';">
+
+<p class="small">
+📸 Add your favourite photo to make this page yours.
+</p>
+
+<button onclick="showPage('final')">
+One Last Surprise 💌
+</button>
+
+</div>
+
+</section>
+
+
+<!-- FINAL -->
+
+<section class="screen hidden" id="final">
+
+<div class="card">
+
+<div style="font-size:65px;">
+💗✨🌷
+</div>
+
+<h2>For You, Pruthviee</h2>
+
+<p>
+If I could give you one thing today,
+it would be the ability to see yourself
+through my eyes.
+</p>
+
+<p>
+Maybe then you'd understand just how
+special and precious you are to me.
+🥹❤️
+</p>
+
+<p>
+Thank you for being a part of my life,
+for the smiles, the conversations,
+the little moments and all the memories
+we still have ahead of us.
+</p>
+
+<p>
+<strong>
+Happy Boyfriend's Day, Pruthviee. ❤️
+</strong>
+</p>
+
+<p>
+Here's to our silly moments,
+our beautiful memories,
+and everything that's still waiting for us. ♾️
+</p>
+
+<div style="font-size:35px;">
+🫶🏻 💕 🌙
+</div>
+
+<p class="footer">
+Made with lots and lots of love,
+just for you. 💌
+</p>
+
+</div>
+
+</section>
+
+
+<script>
+
+function showPage(page) {
+
+    document.querySelectorAll(".screen").forEach(function(section) {
+        section.classList.add("hidden");
+    });
+
+    document.getElementById(page).classList.remove("hidden");
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+
+    const symbols = ["💗", "💕", "💖", "🌷", "✨"];
+
+    heart.innerHTML =
+        symbols[Math.floor(Math.random() * symbols.length)];
+
+    heart.style.left = Math.random() * 100 + "vw";
+
+    heart.style.fontSize =
+        (14 + Math.random() * 20) + "px";
+
+    heart.style.animationDuration =
+        (4 + Math.random() * 4) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(function() {
+        heart.remove();
+    }, 8000);
+}
+
+
+setInterval(createHeart, 700);
+
+</script>
+
+</body>
+  </html>
